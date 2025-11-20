@@ -1,274 +1,246 @@
-<html>
-<style class="adjust-screen-brightness" media="screen"></style>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Home Page of Pragha</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="assets/css/main.css">
+    <title>Home Page of Pragha</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style class="adjust-screen-brightness" media="screen"></style>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Link styling: black normally, green on hover -->
+    <style>
+        a {
+            color: #2a2523;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #49bf9d;
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #f2f5f2;
+            color: rgb(22, 20, 20);
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            float: right;
+            margin-right: 10px;
+            font-size: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </head>
 
-<body class="" cz-shortcut-listen="true" style="">
+<body>
 
-	<header id="header" style="background-position: left 0px;">
-		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/Pragha.jpeg" alt=""></a>
-			
-			<h1 style="line-height: 2.5; color: #faf8f7;font-family: ui-monospace;"> <strong> <b>Praghajieeth Raajhen Santhana Gopalan </b> </strong> <br></h1>
-			<h4 style="line-height: 1.5;color: #faf8f7;font-family: ui-monospace;">Postdoctoral researcher <br>
-				Department of Psychology <br>
-				<a href="http://jyu.fi" target="_blank">University of Jyväskylä</a> 
-				<br> Finland
-			</h4>
-			<h4 style="line-height: 2.5; color: #faf8f7;font-family: ui-monospace;"> prrasant@jyu.fi<br>
-			</h4>
-		</div>
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/praajhen/" class="icon brands fa-linkedin"
-							target="_blank"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://www.researchgate.net/profile/Praghajieeth-Raajhen-Santhana-Gopalan"
-							class="icon brands fa-researchgate" target="_blank"><span
-								class="label">ResearchGate</span></a></li>
-					<li><a href="https://twitter.com/praajhen" class="icon brands fa-twitter" target="_blank"><span
-								class="label">Twitter</span></a></li>
-					<li><a href="https://orcid.org/0000-0003-4244-485X" class="icon brands fa-orcid"
-							target="_blank"><span class="label">ORCID</span></a></li>
+    <header id="header" style="background-position: left 0px;">
+        <div class="inner">
+            <a href="#" class="image avatar">
+                <img src="images/Pragha.jpeg" alt="Photo of Praghajieeth Raajhen Santhana Gopalan">
+            </a>
 
-				</ul>
-				<ul class="copyright">
+            <h1 style="line-height: 2.5; color: #faf8f7; font-family: ui-monospace;">
+                <strong>
+                    <a href="https://www.jyu.fi/en/people/praghajieeth-santhana-gopalan" target="_blank"
+                        style="color: #faf8f7; text-decoration: none;">
+                        Praghajieeth Raajhen Santhana Gopalan
+                    </a>
+                </strong>
+            </h1>
 
-				</ul>
-			</div>
-		</footer>
-	</header>
+            <h4 style="line-height: 1.5; color: #faf8f7; font-family: ui-monospace;">
+                Postdoctoral researcher<br>
+                Department of Psychology<br>
+                <a href="http://jyu.fi" target="_blank" style="color: #faf8f7;">University of Jyväskylä</a><br>
+                Finland
+            </h4>
 
+            <h4 style="line-height: 2.5; color: #faf8f7; font-family: ui-monospace;">
+                prrasant@jyu.fi<br>
+            </h4>
+        </div>
 
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/praajhen/" class="icon brands fa-linkedin" target="_blank">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.researchgate.net/profile/Praghajieeth-Raajhen-Santhana-Gopalan"
+                            class="icon brands fa-researchgate" target="_blank">
+                            <span class="label">ResearchGate</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/praajhen" class="icon brands fa-twitter" target="_blank">
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://orcid.org/0000-0003-4244-485X" class="icon brands fa-orcid" target="_blank">
+                            <span class="label">ORCID</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="copyright"></ul>
+            </div>
+        </footer>
+    </header>
 
-	<!-- Main -->
-	<div id="main">
+    <!-- Main -->
+    <div id="main">
 
+        <div class="clearfix">
+            <!-- <button class="button" onclick="window.location.href='cv.html'">CV</button> -->
+            <button class="button" onclick="window.location.href='research.html'"
+                style="color: #2a2523; background: #e4ddd5; font-family: ui-monospace;">
+                Research
+            </button>
+            <button class="button" onclick="window.location.href='index.html'"
+                style="color: #2a2523; background: #e4ddd5; font-family: ui-monospace;">
+                Home
+            </button>
+        </div>
 
-		<title>My Website</title>
-		<style>
-			.button {
-				background-color: #f2f5f2;
-				/* Green background */
-				color: rgb(22, 20, 20);
-				/* White text */
-				padding: 12px 24px;
-				/* Some padding */
-				border: center;
-				/* No border */
-				cursor: pointer;
-				/* Pointer cursor */
-				float: right;
-				/* Float the buttons side by side */
-				margin-right: 10px;
-				/* Add some right margin to each button */
-				font-size: 15px;
-				/* Increase the font size */
-				text-align: center;
-				/* Center the text */
-				display: flex;
-				/* Add a flexbox container */
-				justify-content: center;
-				/* Center the content horizontally */
-				align-items: center;
-				/* Center the content vertically */
-			}
+        <section id="one">
+            <header>
+                <h2 style="color: #2a2523; font-family: ui-monospace;">About me</h2>
+            </header>
 
-			/* Clear floats (clearfix) */
-			.clearfix::after {
-				content: "";
-				clear: both;
-				display: table;
-			}
-		</style>
+            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
+                I am a postdoctoral researcher at the
+                <a href="http://jyu.fi/en" target="_blank">University of Jyväskylä, Finland</a>,
+                exploring the fascinating intersection of bodily rhythms and cognitive processes.
+                My research aims to unravel the relationship between the brain, heartbeat, and respiration
+                in relation to learning and attention. I am currently working within the
+                <a href="https://www.jyu.fi/en/projects/learndigi-digitalization-in-and-for-learning-and-interaction#toc--project-team-"
+                    target="_blank">
+                    LearnDigi
+                </a>
+                project, investigating the role of cardiorespiratory rhythms in understanding game-based learning processes.
+            </p>
 
+            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
+                I completed my doctoral degree in Cognitive Neuroscience at the University of Jyväskylä and was a
+                recipient of a prestigious
+                <a href="https://cordis.europa.eu/project/id/641652" target="_blank">
+                    Marie Skłodowska-Curie Innovative Training Network
+                </a>.
+                Prior to this, I obtained a Master's degree in Digital Communications from the
+                <a href="https://www.uni-kiel.de/en/" target="_blank">University of Kiel, Germany</a>,
+                where my interest in neuroscience began to flourish. In addition to my academic achievements,
+                I have extensive research experience through various visiting fellowships across Europe.
+                I specialize in analyzing EEG, EMG, ECG, and MEG data, and using tools and programming languages such as
+                MATLAB, SPSS, BESA, and Python.
+            </p>
 
+            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
+                My responsibilities include running lab experiments, collecting physiological data, publishing research
+                findings, and training research assistants. I am passionate about advancing our understanding of the human
+                brain and body and eager to continue contributing to the scientific community.
+            </p>
 
-		<body>
-			<div class="clearfix">
-				<!-- <button class="button" onclick="window.location.href='cv.html'">CV</button>-->
-				<button class="button" onclick="window.location.href='research.html'" style="color: #2a2523;background: #e4ddd5; font-family: ui-monospace;">Research</button>
-				<button class="button" onclick="window.location.href='index.html'" style="color: #2a2523;background: #e4ddd5; font-family: ui-monospace;">Home</button>
-			</div>
-		</body>
+            <hr>
 
+            <header>
+                <h2 style="color: #2a2523; font-family: ui-monospace;">News</h2>
+            </header>
 
+            <div style="overflow: auto; color: #2a2523; font-family: ui-monospace; height: 150px;">
+                <ul>
+                    <li style="margin-bottom: 15px;">
+                        <span class="date">May 2024</span>
+                        <span class="event">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one-year Postdoctoral Researcher Funding from
+                            <a href="https://www.ellageorg.fi/en/grant-information/grants-awarded" target="_blank">
+                                Ella and Georg Ehrnrooth Foundation, Finland
+                            </a>
+                            for the period 2024–2025.
+                        </span>
+                    </li>
 
+                    <li style="margin-bottom: 15px;">
+                        <span class="date">March 2024</span>
+                        <span class="event">
+                            &nbsp;&nbsp;&nbsp;Cardiorespiratory rhythm &amp; learning in elderly manuscript accepted –
+                            <a href="https://doi.org/10.1152/jn.00356.2023" target="_blank">
+                                Journal of Neurophysiology
+                            </a>.
+                        </span>
+                    </li>
 
+                    <li style="margin-bottom: 15px;">
+                        <span class="date">July 2023</span>
+                        <span class="event">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="pdf/poster.pdf" target="_blank">Poster presentation</a> at
+                            <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4114" target="_blank">
+                                OHBM 2023
+                            </a>, Montreal, Canada.
+                        </span>
+                    </li>
 
+                    <li style="margin-bottom: 15px;">
+                        <span class="date">May 2023</span>
+                        <span class="event">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one-year Postdoctoral Researcher Funding from
+                            <a href="https://www.ellageorg.fi/wp-content/uploads/Myonnetyt-apurahat-2023.pdf"
+                                target="_blank">
+                                Ella and Georg Ehrnrooth Foundation, Finland
+                            </a>
+                            for the period 2023–2024.
+                        </span>
+                    </li>
 
+                    <li>
+                        <span class="date">Sept. 2022</span>
+                        <span class="event">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Started postdoctoral research work in
+                            <a href="https://www.jyu.fi/en/research-groups/learning-and-neural-plasticity-from-single-neurons-to-behavior#toc--research-group-"
+                                target="_blank">
+                                Miriam Nokia's
+                            </a>
+                            group.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-		<section id="one">
-			<header>
-				<h2 style="color: #2a2523; font-family: ui-monospace;"> About me </h2>
-			</header>
-			<h4 style=" color: #2a2523;font-family: ui-monospace;">
-				<p align="justify"> I am a postdoctoral researcher at the <a href="http://jyu.fi/en" target="_blank"> University of Jyväskylä, Finland</a>, 
-					exploring the fascinating intersection of bodily rhythms and cognitive processes. 
-					My research aims to unravel the relationship between brain, heartbeat and respiration with learning and attention. 
-					I am currently working within the <a href="https://www.jyu.fi/en/projects/learndigi-digitalization-in-and-for-learning-and-interaction#toc--project-team-" target="_blank"> LearnDigi</a> project, investigation the 
-					role of cardiorespiratory rhythms in understanding the game-based learning processes.
-					
+        <footer>
+            <br><br><br><br>
+            <p style="color: #767575; font-family: ui-monospace;">
+                © Praghajieeth Raajhen Santhana Gopalan, 2025. Hosted by GitHub Pages. Last updated on November 2025.
+            </p>
+        </footer>
 
-				<p align="justify"> I got a doctoral degree in Cognitive Neuroscience from the University of Jyväskylä, and
-					recipient of a prestigious <a href="https://cordis.europa.eu/project/id/641652" target="_blank"> Marie
-						Skłodowska-Curie Innovative Training Networks</a>. Prior to this, I obtained a Master's degree in Digital Communications
-					from the <a href="https://www.uni-kiel.de/en/" target="_blank">University of Kiel, Germany</a>,
-					where my interest in neuroscience began to flourish.
-					In addition to my academic achievements, I have extensive research experience through
-					various visiting fellowships across Europe. I specialize in analyzing EEG, EMG, ECG, and MEG data,
-					and programming languages such as MatLab, SPSS, BESA, and Python. </p>
+    </div>
 
-				<p align="justify"> My responsibilities include running lab experiments, collecting physiological data,
-					publishing
-					research findings, and training research assistants. I am passionate about advancing our
-					understanding of the
-					human brain and body, and eager to continue contributing to the scientific community.</p>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-
-			</h4>
-			<!--<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</section> -->
-
-					<hr>
-			<!-- Two -->
-			
-						
-			<header>
-				<h2 style="color: #2a2523; font-family: ui-monospace;">News</h2>
-			</header>
-			
-			<h4 style="overflow: auto;color: #2a2523; font-family: ui-monospace;height: 150px; overflow: auto;">
-				<ul>
-
-					<li style="margin-bottom: 15px;">
-						<span class="date">May 2024</span>
-						<span class="event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one year Postdoctoral Researcher Funding from <a href="https://www.ellageorg.fi/en/grant-information/grants-awarded" target="_blank"> 
-							Ella and Georg <br>Ehrnrooth foundation, Finland</a> for the period of 2024-2025.</span>
-					</li>
-
-					<li style="margin-bottom: 15px;">
-						<span class="date">March 2024</span>
-						<span class="event">&nbsp;&nbsp;&nbsp;Cardiorespiratory rhythm & learning in elderly manucript accepted - 
-							<a href="https://doi.org/10.1152/jn.00356.2023" target="_blank"> Journal of Neurophysiology</a>.</span>
-					</li>
-
-					<li style="margin-bottom: 15px;">
-						<span class="date">July 2023</span>
-						<span class="event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href= "pdf/poster.pdf" target ="_blank">Poster presentation </a>at 
-							<a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4114" target="_blank"> OHBM 2023</a>, Montreal, Canada.</span>
-					</li>
-					<li style="margin-bottom: 15px;">
-						<span class="date">May 2023</span>
-						<span class="event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one year Postdoctoral Researcher Funding from <a href="https://www.ellageorg.fi/wp-content/uploads/Myonnetyt-apurahat-2023.pdf" target="_blank"> 
-							Ella and Georg <br>Ehrnrooth foundation, Finland</a> for the period of 2023-2024.</span>
-					</li>
-					<li>
-						<span class="date">Sept. 2022</span>
-						<span class="event">&nbsp;&nbsp;&nbsp;&nbsp;Started postdoctoral research work at <a href="https://www.jyu.fi/en/research-groups/learning-and-neural-plasticity-from-single-neurons-to-behavior#toc--research-group-" target="_blank"> 
-						Miriam Nokia's</a> group.</span>
-					</li>
-				</ul>
-			</h4>
-			</section>
-			
-			
-			
-			
-			
-			
-			
-
-
-			<hr>
-<!-- 
-			<section id="three">
-				<header>
-					<h3 style=" color: #2a2523; font-family: ui-monospace;">Education</h3>
-				</header>
-
-				<h4 style=" color: #2a2523;font-family: ui-monospace;">
-					<ul>
-						<li>2015 - 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doctoral
-							Degree in Cognitive Neuroscience, University of Jyväskylä, Finland</li>
-						<li>2012 - 2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master
-							Degree in Digital Communications, University of Kiel, Germany </li>
-						<li>2008 - 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor
-							Degree in Electronics and Communication Engineering, Anna University, India</li>
-					</ul>
-				</h4>
-			</section>
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- Footer -->
-
-
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-
-
-			<footer>
-				<br> <br><br><br>
-				<p style=" color: #767575;font-family: ui-monospace;">© Praghajieeth Raajhen Santhana Gopalan, 2025. Hosted by GitHub Pages. Last updated on June 2025
-				</p>
-			</footer>
-
-
-
-		</section>
-	</div>
-	<div class="poptrox-overlay"
-		style="position: fixed; left: 0px; top: 0px; z-index: 1000; width: 100%; height: 100%; text-align: center; cursor: pointer; display: none;">
-		<div style="display:inline-block;height:100%;vertical-align:middle;"></div>
-		<div
-			style="position:absolute;left:0;top:0;width:100%;height:100%;background:#2c2c2c;opacity:0.85;filter:alpha(opacity=85);">
-		</div>
-		<div class="poptrox-popup"
-			style="display: none; vertical-align: middle; position: relative; z-index: 1; cursor: auto; min-width: 200px; min-height: 100px;">
-			<div class="loader" style="display: none;"></div>
-			<div class="pic" style="display: none;"></div>
-			<div class="caption" style="display: none;"></div><span class="closer"
-				style="cursor: pointer; display: none;"></span>
-			<div class="nav-previous" style="display: none;"></div>
-			<div class="nav-next" style="display: none;"></div>
-		</div>
-	</div>
-</body><!-- One -->
+</body>
 
 </html>
