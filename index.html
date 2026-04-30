@@ -1,269 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Home Page of Pragha</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <style class="adjust-screen-brightness" media="screen"></style>
-
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- Link styling: black normally, green on hover -->
-    <style>
-        a {
-            color: #2a2523;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #49bf9d;
-            text-decoration: underline;
-        }
-
-        .button {
-            background-color: #f2f5f2;
-            color: rgb(22, 20, 20);
-            padding: 12px 24px;
-            border: none;
-            cursor: pointer;
-            float: right;
-            margin-right: 10px;
-            font-size: 15px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praajhen | Researcher</title>
+<style>
+.lang-fi{display:none}.lang-switch{position:absolute;top:18px;right:20px;display:flex;gap:8px}.lang-switch button{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);padding:6px 10px;border-radius:8px;cursor:pointer;font-weight:700}.lang-switch button:hover{background:rgba(255,255,255,.2)}.lang-switch button.active{background:#3b82f6;border-color:#60a5fa;color:#fff;box-shadow:0 0 0 2px rgba(59,130,246,.25)}header{position:relative}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;line-height:1.6;color:#111;background:#f8fafc}header{background:#0f172a;color:#fff;padding:56px 20px}.hero{max-width:1100px;margin:auto;display:grid;grid-template-columns:220px 1fr;gap:34px;align-items:center}.hero-left{text-align:center}.hero-right{text-align:left}header img{width:210px;height:210px;border-radius:18px;object-fit:cover;object-position:center 20%;border:4px solid rgba(255,255,255,.95);box-shadow:0 10px 28px rgba(0,0,0,.28)}header h1{font-size:2.2rem;margin-bottom:10px;line-height:1.2}header p{font-size:1.05rem;max-width:760px;margin:8px 0;opacity:.95}.btns{margin-top:22px}.btns a{display:inline-block;margin:6px;padding:10px 18px;background:#3b82f6;color:#fff;text-decoration:none;border-radius:8px}.socials{margin-top:14px;display:flex;align-items:center;gap:12px;flex-wrap:nowrap}.socials a:first-child{margin-left:0}.socials a{flex:0 0 42px}@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.hero-right{text-align:center}header p{margin:8px auto}.socials a:first-child{margin-left:8px}}.socials a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin:0 6px;color:#ffffff !important;text-decoration:none;font-size:1.05rem;font-weight:700;border:1px solid rgba(255,255,255,.18);border-radius:10px;background:rgba(255,255,255,.04);font-family:Arial,sans-serif} .socials .gh{background:#fff;color:#111 !important;font-weight:900;padding:0;overflow:hidden}.socials .gh img{width:34px;height:34px;object-fit:contain;display:block} .socials .in{font-weight:800;color:#0A66C2 !important;background:#fff} .socials .rg{font-size:.92rem;color:#00CCBB !important;background:#fff} .socials .or{font-size:.95rem;color:#A6CE39 !important;background:#fff} .socials .un{background:#fff;color:#111 !important;padding:0;overflow:hidden}.socials .un img{width:36px;height:36px;object-fit:contain;display:block}.socials a:hover{color:#fff !important;background:rgba(255,255,255,.1);transform:translateY(-1px)}.section{max-width:1100px;margin:auto;padding:42px 20px}.recruit{max-width:1100px;margin:-12px auto 0;padding:0 20px}.recruit-card{background:linear-gradient(135deg,#eff6ff,#ffffff);border:1px solid #dbeafe;border-radius:18px;padding:24px;box-shadow:0 10px 24px rgba(0,0,0,.06);display:grid;grid-template-columns:1.4fr .8fr;gap:22px;align-items:center}.recruit h3{font-size:1.45rem;color:#0f172a;margin-bottom:8px}.recruit p{color:#334155;margin:6px 0}.recruit ul{margin:10px 0 0 18px;color:#334155}.recruit .cta{display:inline-block;margin-top:14px;padding:10px 18px;background:#2563eb;color:#fff;text-decoration:none;border-radius:10px;font-weight:700}.badge-open{display:inline-block;background:#dcfce7;color:#166534;padding:6px 10px;border-radius:999px;font-size:.82rem;font-weight:700;margin-bottom:10px}@media(max-width:800px){.recruit-card{grid-template-columns:1fr}}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:20px}.tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.tag{background:#e2e8f0;color:#0f172a;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.95rem}.card{background:#fff;padding:32px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08)}.project-row{display:block;background:#fff;padding:24px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);margin-bottom:16px;min-height:auto}.project-text h3{font-size:1.3rem;margin-bottom:10px;color:#0f172a}.project-text p{color:#334155}@media(max-width:800px){.project-row{display:block}}h2{font-size:2rem;margin-bottom:16px;color:#0f172a}.timeline{display:table;width:100%;border-collapse:collapse}.timeline div{display:table-row;background:transparent}.timeline strong{display:table-cell;width:220px;padding:12px 22px 12px 0;color:#0f172a;vertical-align:top;font-weight:700;border-bottom:1px solid #e2e8f0}.timeline .super-content,.timeline span.rowtext{display:table-cell;padding:12px 0;line-height:1.45;vertical-align:top;border-bottom:1px solid #e2e8f0}.timeline em{display:block;margin-top:2px}.timeline .super-row{display:table-row} .timeline div:last-child{border-bottom:none}.timeline div div{margin:0}.pub-feature{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:8px 0 22px}.pub-card{background:#fff;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.06)}.pub-title{font-weight:700;color:#0f172a;margin-bottom:6px;line-height:1.35;font-size:1.02rem}.pub-meta{color:#475569;font-size:.9rem;margin-bottom:6px;font-style:italic}.pub-authors{color:#64748b;font-size:.86rem;margin-bottom:8px;line-height:1.35}.pub-link{display:inline-block;color:#2563eb !important;text-decoration:none;font-size:.86rem;font-weight:600}.pub-list .pub-item{padding:14px 0;border-bottom:1px solid #e2e8f0}.pub-list .pub-item:last-child{border-bottom:none}@media(max-width:800px){.pub-feature{grid-template-columns:1fr}}footer{background:#0f172a;color:#fff;text-align:center;padding:30px;margin-top:50px}a{color:#3b82f6}@media(max-width:700px){header h1{font-size:1.8rem}}
+</style>
 </head>
-
 <body>
+<script>
+function setLang(lang){
+ document.querySelectorAll('[data-en]').forEach(el=>el.style.display=lang==='en'?'':'none');
+ document.querySelectorAll('[data-fi]').forEach(el=>el.style.display=lang==='fi'?'':'none');
+ document.querySelectorAll('.lang-switch button').forEach(btn=>btn.classList.remove('active'));
+ document.getElementById('btn-'+lang).classList.add('active');
+ document.documentElement.lang=lang;
+}
+window.addEventListener('DOMContentLoaded',()=>setLang('en'));
+</script>
+<header><div class="lang-switch"><button id="btn-en" onclick="setLang('en')">EN</button><button id="btn-fi" onclick="setLang('fi')">FI</button></div><div class="hero"><div class="hero-left"><img src="images/Pragha.jpeg" alt="Dr. Praghajieeth Raajhen Santhana Gopalan"></div><div class="hero-right"><h1>Praghajieeth Raajhen Santhana Gopalan, PhD</h1>
+<p data-en>Postdoctoral Researcher in Cognitive Neuroscience<br>University of Jyväskylä, Finland</p><p data-fi>Tutkijatohtori kognitiivisessa neurotieteessä<br>Jyväskylän yliopisto, Suomi</p><p data-en>Investigating how brain, heart, and breathing rhythms shape attention, learning, and healthy aging.</p><p data-fi>Tutkin, miten aivojen, sydämen ja hengityksen rytmit vaikuttavat tarkkaavuuteen, oppimiseen ja terveeseen ikääntymiseen.</p>
+<div class="btns">
+<a href="#projects"><span data-en>Projects</span><span data-fi>Projektit</span></a>
+<a href="#funding"><span data-en>Fundings</span><span data-fi>Apurahat</span></a>
+<a href="#publications"><span data-en>Publications</span><span data-fi>Julkaisut</span></a>
+</div>
+<div class="socials">
+<a class="gh" href="https://github.com/praajhen" target="_blank" rel="noopener noreferrer" title="GitHub"><img src="images/github.jpg" alt="GitHub"></a>
+<a class="in" href="https://www.linkedin.com/in/praajhen/" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+<a class="rg" href="https://www.researchgate.net/profile/Praghajieeth-Raajhen-Santhana-Gopalan" target="_blank" rel="noopener noreferrer" title="ResearchGate">RG</a>
+<a class="or" href="https://orcid.org/0000-0003-4244-485X" target="_blank" rel="noopener noreferrer" title="ORCID">iD</a>
+<a class="un" href="https://www.jyu.fi/en/people/praghajieeth-santhanagopalan" target="_blank" rel="noopener noreferrer" title="University Profile"><img src="images/jyu.jpg" alt="University Profile"></a>
+</div></div></header>
+<section class="recruit">
+<div class="recruit-card">
+<div>
+<div class="badge-open" data-en>Now Recruiting Participants</div><div class="badge-open" data-fi>Etsimme osallistujia tutkimukseen</div>
+<h3 data-en>Rule-Based Learning Study</h3><h3 data-fi>Sääntöoppimisen tutkimus</h3>
+<p data-en>Join our cognitive neuroscience study investigating how brain, heart, breathing, and skin signals relate to learning performance.</p><p data-fi>Tule mukaan kognitiivisen neurotieteen tutkimukseen, jossa selvitetään aivojen, sydämen, hengityksen ja ihon signaalien yhteyttä oppimiseen.</p>
+<ul>
+<li data-en>Healthy adults aged 18–40 years</li><li data-fi>Terveet aikuiset 18–40 vuotta</li>
+<li data-en>EEG, ECG, respiration, and electrodermal activity recordings</li><li data-fi>EEG-, ECG-, hengitys- ja ihon sähkönjohtavuusmittaukset</li>
+<li data-en>One visit (~70 minutes)</li><li data-fi>Yksi käynti (~70 minuuttia)</li>
+<li data-en><a href="https://www.google.com/maps/search/?api=1&query=Mattilanniemi+6,+40100+Jyväskylä,+Finland" target="_blank" rel="noopener noreferrer">University of Jyväskylä, Mattilanniemi 6, 40100 Jyväskylä ↗</a></li><li data-fi><a href="https://www.google.com/maps/search/?api=1&query=Mattilanniemi+6,+40100+Jyväskylä,+Finland" target="_blank" rel="noopener noreferrer">Jyväskylän yliopisto, Mattilanniemi 6, 40100 Jyväskylä ↗</a></li>
+</ul>
+<a class="cta" href="mailto:prrasant@jyu.fi?subject=Participant%20Interest%20-%20Rule-Based%20Learning%20Study"><span data-en>Email to Participate</span><span data-fi>Lähetä sähköposti osallistuaksesi</span></a>
+</div>
+<div>
+<p data-en><strong>What you will do:</strong><br>Play an easy computer game while we measure brain and body signals using comfortable non-invasive sensors.</p><p data-fi><strong>Mitä teet:</strong><br>Pelaat helppoa tietokonepeliä samalla kun mittaamme aivojen ja kehon signaaleja mukavilla, ei-invasiivisilla sensoreilla.</p>
 
-    <header id="header" style="background-position: left 0px;">
-        <div class="inner">
-            <a href="#" class="image avatar">
-                <img src="images/Pragha.jpeg" alt="Photo of Praghajieeth Raajhen Santhana Gopalan">
-            </a>
+<p data-en><strong>Participation:</strong><br>Voluntary and free participation.</p><p data-fi><strong>Osallistuminen:</strong><br>Vapaaehtoista ja maksutonta.</p>
+</div>
+</div>
+</section>
 
-            <h1 style="line-height: 2.5; color: #faf8f7; font-family: ui-monospace;">
-                <strong>
-                    <a href="https://www.jyu.fi/en/people/praghajieeth-santhana-gopalan" target="_blank"
-                        style="color: #faf8f7; text-decoration: none;">
-                        Praghajieeth Raajhen Santhana Gopalan
-                    </a>
-                </strong>
-            </h1>
+<section class="section" id="projects">
+<h2 data-en>Projects</h2><h2 data-fi>Projektit</h2>
+<p data-en style="color:#475569;margin-bottom:18px;font-size:1rem;max-width:760px">Current flagship projects are highlighted below. Earlier completed projects are summarized as a research track record.</p><p data-fi style="color:#475569;margin-bottom:18px;font-size:1rem;max-width:760px">Nykyiset päätutkimusprojektit on esitelty alla. Aiemmat projektit on koottu tutkimusuran kokonaiskuvaksi.</p>
+<div class="project-row">
+<div class="project-text">
+<h3 data-en>2026–Today</h3><h3 data-fi>2026–</h3><p data-en><strong>Prediction-based optimization of rule-based learning using multimodal EEG, cardiac, respiratory, and electrodermal signals</strong></p><p data-fi><strong>Sääntöoppimisen ennustepohjainen optimointi hyödyntäen EEG-, sydän-, hengitys- ja ihosignaaleja</strong></p><p data-en>Machine learning + EEG/ECG/EDA • Predicts optimal learning states and adaptive stimulus timing in cognitive training</p><p data-fi>Koneoppiminen + EEG/ECG/EDA • Ennustaa optimaalisia oppimistiloja ja mukautuvaa ärsykkeiden ajoitusta kognitiivisessa harjoittelussa</p>
+</div>
 
-            <h4 style="line-height: 1.5; color: #faf8f7; font-family: ui-monospace;">
-                Postdoctoral researcher<br>
-                Department of Psychology<br>
-                <a href="http://jyu.fi" target="_blank" style="color: #faf8f7;">University of Jyväskylä</a><br>
-                Finland
-            </h4>
+</div>
+<div class="project-row project-alt">
+<div class="project-text">
+<h3 data-en>2026–Today</h3><h3 data-fi>2026–</h3><p data-en><strong>Developmental attention networks: ERP and time-frequency EEG analysis</strong></p><p data-fi><strong>Kehitykselliset tarkkaavuusverkostot: ERP- ja aika-taajuus EEG-analyysi</strong></p><p data-en>128-channel EEG • Revealed age-related neural dynamics of attention using ERP, theta, alpha, and beta oscillations</p><p data-fi>128-kanavainen EEG • Ikään liittyvien tarkkaavuusprosessien hermodynamiikan tutkimus ERP-, theta-, alfa- ja beetaoskillaatioiden avulla</p>
+</div>
 
-            <h4 style="line-height: 2.5; color: #faf8f7; font-family: ui-monospace;">
-                prrasant@jyu.fi<br>
-            </h4>
-        </div>
+</div>
+<div class="project-row">
+<div class="project-text">
+<h3 data-en>2026–Today</h3><h3 data-fi>2026–</h3><p data-en><strong>Multimodal neurophysiology of spiral drawing and Parkinson’s motor biomarkers</strong></p><p data-fi><strong>Spiraalipiirtämisen multimodaalinen neurofysiologia ja Parkinsonin taudin motoriset biomarkkerit</strong></p><p data-en>280-channel EEG + wearable ECG • Identifies neural, cardiac, and movement markers from spiral drawing, including Parkinson’s disease patient data</p><p data-fi>280-kanavainen EEG + puettava EKG-laite • Tunnistaa hermostollisia, sydänperäisiä ja liikkeeseen liittyviä markkereita spiraalipiirtämisestä, sisältäen Parkinson-potilasaineiston</p>
+</div>
 
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/praajhen/" class="icon brands fa-linkedin" target="_blank">
-                            <span class="label">LinkedIn</span>
-                        </a>
-                    </li>
+</div>
+<div class="project-row project-alt">
+<div class="project-text">
+<h3 data-en>2024–2026</h3><h3 data-fi>2024–2026</h3>
+<p data-en><strong>Personalised cardiorespiratory timing enhances sensory neural responses during associative learning</strong></p>
+<p data-fi><strong>Yksilöllinen sydän- ja hengitysrytmin ajoitus vahvistaa sensorisia hermovasteita assosiatiivisen oppimisen aikana</strong></p>
+<p data-en>128-channel EEG + ECG + respiration • Enhanced sensory neural responses through physiology-timed learning cues</p>
+<p data-fi>128-kanavainen EEG + ECG + hengitys • Fysiologisesti ajoitetut oppimisvihjeet vahvistivat sensorisia hermovasteita</p>
+</div>
 
-                    <li>
-    <a href="https://github.com/praajhen" class="icon brands fa-github" target="_blank">
-        <span class="label">GitHub</span>
-    </a>
-</li>
-                    <li>
-                        <a href="https://www.researchgate.net/profile/Praghajieeth-Raajhen-Santhana-Gopalan"
-                            class="icon brands fa-researchgate" target="_blank">
-                            <span class="label">ResearchGate</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/praajhen" class="icon brands fa-twitter" target="_blank">
-                            <span class="label">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://orcid.org/0000-0003-4244-485X" class="icon brands fa-orcid" target="_blank">
-                            <span class="label">ORCID</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="copyright"></ul>
-            </div>
-        </footer>
-    </header>
+</div>
+<h3 data-en style="margin:26px 0 14px;color:#0f172a">Earlier Completed Projects</h3><h3 data-fi style="margin:26px 0 14px;color:#0f172a">Aiemmat projektit</h3>
+<div class="timeline">
+<div class="super-row"><strong>2023–2026</strong><div class="super-content">Unlocking the potential for attention improvement with cardiorespiratory rhythms monitoring.</div></div>
+<div class="super-row"><strong>2022–2023</strong><div class="super-content">Optimizing learning – synchrony of the brain and body as a tool?</div></div>
+<div class="super-row"><strong>2015–2019</strong><div class="super-content">ChildBrain – Advancing brain research in children's developmental neurocognitive disorders.</div></div>
+<div class="super-row"><strong>2015–2017</strong><div class="super-content">eSeek – Internet and learning difficulties: Multidisciplinary approach for understanding information seeking in new media.</div></div>
+</div>
+</section>
+<section class="section" id="funding">
+<h2 data-en>Research Grants and Fundings</h2><h2 data-fi>Tutkimusapurahat ja rahoitus</h2>
+<div class="timeline">
+<div><strong>2026</strong><span class="rowtext"><span data-en>University of Jyväskylä Mobility Funding – international networking</span><span data-fi>Jyväskylän yliopiston liikkuvuusrahoitus – kansainvälinen verkostoituminen</span></span></div>
+<div><strong>2023–2025</strong><span class="rowtext"><span data-en>Postdoctoral Research Funding from Ella and Georg Ehrnrooth Foundation, Finland</span><span data-fi>Postdoc-tutkimusrahoitus Ella ja Georg Ehrnroothin säätiöltä, Suomi</span></span></div>
+<div><strong>2015–2019</strong><span class="rowtext"><span data-en>Marie Curie Early Stage Researcher Fellowship (ChildBrain European Training Network)</span><span data-fi>Marie Curie Early Stage Researcher Fellowship (ChildBrain European Training Network)</span></span></div>
+<div><strong>2018</strong><span class="rowtext"><span data-en>Travel grant – European Commission & European Union (Science is Wonder-ful, Brussels, Belgium)</span><span data-fi>Matka-apuraha – Euroopan komissio & Euroopan unioni (Science is Wonder-ful, Brussels, Belgium)</span></span></div>
+<div><strong>2017</strong><span class="rowtext"><span data-en>Travel grant – Finnish National Agency for Education (EDUFI), 21st EDUFI Winter School, Tvärminne, Finland</span><span data-fi>Matka-apuraha – Opetushallitus (EDUFI), 21st EDUFI Winter School, Tvärminne, Finland</span></span></div>
+<div><strong>2014</strong><span class="rowtext"><span data-en>Master’s thesis stipend – Christian-Albrechts-Universität zu Kiel, Germany</span><span data-fi>Pro gradu -stipendi – Christian-Albrechts-Universität zu Kiel, Saksa</span></span></div>
+</div>
+</section>
+<section class="section" id="supervision">
+<h2 data-en>Thesis Supervision</h2><h2 data-fi>Opinnäytteiden ohjaus</h2>
+<div class="timeline">
+<div class="super-row"><strong data-en>In progress</strong><strong data-fi>Käynnissä</strong><div class="super-content"><span data-en>Topias Rannankari & Sohvi Saarinen. High-resolution binning of respiratory and cardiac cycles reveals their impact on brain event-related potentials.<em>Master’s thesis, Department of Psychology, University of Jyväskylä, Finland.</em></span><span data-fi>Topias Rannankari & Sohvi Saarinen. Hengitys- ja sydänsyklien tarkka vaiheistus paljastaa niiden vaikutuksen aivojen tapahtumasidonnaisiin vasteisiin.<em>Pro gradu -tutkielma, Psykologian laitos, Jyväskylän yliopisto, Suomi.</em></span></div></div>
+<div class="super-row"><strong data-en>In progress</strong><strong data-fi>Käynnissä</strong><div class="super-content"><span data-en>Maarit Hirvonen. Study on the relationship between cardiac and respiratory rhythms and inhibitory control in healthy young and older adults.<em>Master’s thesis, Department of Psychology, University of Jyväskylä, Finland.</em></span><span data-fi>Maarit Hirvonen. Tutkimus sydän- ja hengitysrytmien yhteydestä inhibitiokykyyn terveillä nuorilla ja vanhoilla aikuisilla.<em>Pro gradu -tutkielma, Psykologian laitos, Jyväskylän yliopisto, Suomi.</em></span></div></div>
+<div class="super-row"><strong>2024</strong><div class="super-content"><span data-en>Roosa-Mariia Hooli & Sunna Länsman. Effects of bodily rhythms on learning in older adults during eyeblink conditioning.<em>Master’s thesis, Department of Psychology, University of Jyväskylä, Finland.</em></span><span data-fi>Roosa-Mariia Hooli & Sunna Länsman. Kehon rytmien vaikutus ikääntyneiden oppimiseen silmäniskuehdollistumisessa.<em>Pro gradu -tutkielma, Psykologian laitos, Jyväskylän yliopisto, Suomi.</em></span></div></div>
+<div class="super-row"><strong>2023</strong><div class="super-content"><span data-en>Jasmin Wilén. Relationship between skin conductance and attention in older adults.<em>Bachelor’s thesis, Department of Psychology, University of Jyväskylä, Finland.</em></span><span data-fi>Jasmin Wilén. Ihon sähkönjohtavuuden ja tarkkaavuuden suhde ikääntyneillä.<em>Kandidaatintutkielma, Psykologian laitos, Jyväskylän yliopisto, Suomi.</em></span></div></div>
+</div>
+</section>
+<section class="section" id="publications">
+<h2 data-en>Publications</h2><h2 data-fi>Julkaisut</h2>
+<div class="pub-list">
+<div class="pub-item"><div class="pub-authors"><strong>Santhana Gopalan, P. R.</strong>, Hämäläinen, J., Penttonen, M., & Nokia, M. S. (2026).</div><div class="pub-title">Impact of cardiac cycle and respiratory rhythm phase on visual attention in healthy young and older adults.</div><div class="pub-meta"><em>Scientific Reports</em> · <a class="pub-link" href="https://www.nature.com/articles/s41598-026-47916-6" target="_blank" rel="noopener noreferrer">Full text ↗</a></div></div>
+<div class="pub-item"><div class="pub-authors"><strong>Santhana Gopalan, P. R.</strong>, Xu, W., Waselius, T., Wikgren, J., Penttonen, M., & Nokia, M. S. (2025).</div><div class="pub-title">Cardiorespiratory rhythm–contingent trace eyeblink conditioning in elderly adults.</div><div class="pub-meta"><em>Journal of Neurophysiology</em> · <a class="pub-link" href="https://journals.physiology.org/doi/full/10.1152/jn.00356.2023" target="_blank" rel="noopener noreferrer">Full text ↗</a></div></div>
+<div class="pub-item"><div class="pub-authors"><strong>Santhana Gopalan, P. R.</strong> (2019).</div><div class="pub-title">Attentional Subprocesses in Typical and Atypically Developing Children as Revealed Using Brain Electrical Activity.</div><div class="pub-meta">Doctoral dissertation, University of Jyväskylä · <a class="pub-link" href="https://jyx.jyu.fi/jyx/Record/jyx_123456789_74390" target="_blank" rel="noopener noreferrer">Full text ↗</a></div></div>
+<div class="pub-item"><div class="pub-authors"><strong>Santhana Gopalan, P. R.</strong>, Loberg, O., Lohvansuu, K., McCandliss, B., Hämäläinen, J., & Leppänen, P. (2020).</div><div class="pub-title">Attentional Processes in Children With Attentional Problems or Reading Difficulties as Revealed Using Brain Event-Related Potentials and Their Source Localization.</div><div class="pub-meta"><em>Frontiers in Human Neuroscience</em> · <a class="pub-link" href="https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2020.00160/full" target="_blank" rel="noopener noreferrer">Full text ↗</a></div></div>
+<div class="pub-item"><div class="pub-authors"><strong>Santhana Gopalan, P. R.</strong>, Loberg, O., Hämäläinen, J., & Leppänen, P. (2018).</div><div class="pub-title">Attentional processes in typically developing children as revealed using brain event-related potentials and their source localization in the Attention Network Test.</div><div class="pub-meta"><em>Scientific Reports</em> · <a class="pub-link" href="https://www.nature.com/articles/s41598-018-36947-3" target="_blank" rel="noopener noreferrer">Full text ↗</a></div></div>
+</div>
+</section>
 
-    <!-- Main -->
-    <div id="main">
-
-        <div class="clearfix">
-            <!-- <button class="button" onclick="window.location.href='cv.html'">CV</button> -->
-            <button class="button" onclick="window.location.href='research.html'"
-                style="color: #2a2523; background: #e4ddd5; font-family: ui-monospace;">
-                Research
-            </button>
-            <button class="button" onclick="window.location.href='index.html'"
-                style="color: #2a2523; background: #e4ddd5; font-family: ui-monospace;">
-                Home
-            </button>
-        </div>
-
-        <section id="one">
-            <header>
-                <h2 style="color: #2a2523; font-family: ui-monospace;">About me</h2>
-            </header>
-
-            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
-                I am a postdoctoral researcher at the
-                <a href="http://jyu.fi/en" target="_blank">University of Jyväskylä, Finland</a>,
-                exploring the fascinating intersection of bodily rhythms and cognitive processes.
-                My research aims to unravel the relationship between the brain, heartbeat, and respiration
-                in relation to learning and attention. I am currently working within the
-                <a href="https://www.jyu.fi/en/projects/learndigi-digitalization-in-and-for-learning-and-interaction#toc--project-team-"
-                    target="_blank">
-                    LearnDigi
-                </a>
-                project, investigating the role of cardiorespiratory rhythms in understanding game-based learning processes.
-            </p>
-
-            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
-                I completed my doctoral degree in Cognitive Neuroscience at the University of Jyväskylä and was a
-                recipient of a prestigious
-                <a href="https://cordis.europa.eu/project/id/641652" target="_blank">
-                    Marie Skłodowska-Curie Innovative Training Network
-                </a>.
-                Prior to this, I obtained a Master's degree in Digital Communications from the
-                <a href="https://www.uni-kiel.de/en/" target="_blank">University of Kiel, Germany</a>,
-                where my interest in neuroscience began to flourish. In addition to my academic achievements,
-                I have extensive research experience through various visiting fellowships across Europe.
-                I specialize in analyzing EEG, EMG, ECG, and MEG data, and using tools and programming languages such as
-                MATLAB, SPSS, BESA, and Python.
-            </p>
-
-            <p style="color: #2a2523; font-family: ui-monospace; text-align: justify;">
-                My responsibilities include running lab experiments, collecting physiological data, publishing research
-                findings, and training research assistants. I am passionate about advancing our understanding of the human
-                brain and body and eager to continue contributing to the scientific community.
-            </p>
-
-            <hr>
-
-            <header>
-                <h2 style="color: #2a2523; font-family: ui-monospace;">News</h2>
-            </header>
-
-            <div style="overflow: auto; color: #2a2523; font-family: ui-monospace; height: 150px;">
-                <ul>
-
-                    <li style="margin-bottom: 15px;">
-    <span class="date">April 2026</span>
-    <span class="event">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manuscript titled 
-        “Impact of cardiac cycle and respiratory rhythm phase on visual attention in healthy young and older adults” 
-        accepted for publication in Scientific Reports.
-    </span>
-</li>
-
-                    <li style="margin-bottom: 15px;">
-    <span class="date">January 2026</span>
-    <span class="event">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received JYU Mobility funding for strengthening international networking for a two-month research visit to the University of Augsburg, Germany.
-    </span>
-</li>
-
-                    <li style="margin-bottom: 15px;">
-                        <span class="date">May 2024</span>
-                        <span class="event">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one-year Postdoctoral Researcher Funding from
-                            <a href="https://www.ellageorg.fi/en/grant-information/grants-awarded" target="_blank">
-                                Ella and Georg Ehrnrooth Foundation, Finland
-                            </a>
-                            for the period 2024–2025.
-                        </span>
-                    </li>
-
-                    <li style="margin-bottom: 15px;">
-                        <span class="date">March 2024</span>
-                        <span class="event">
-                            &nbsp;&nbsp;&nbsp;Cardiorespiratory rhythm &amp; learning in elderly manuscript accepted –
-                            <a href="https://doi.org/10.1152/jn.00356.2023" target="_blank">
-                                Journal of Neurophysiology
-                            </a>.
-                        </span>
-                    </li>
-
-                    <li style="margin-bottom: 15px;">
-                        <span class="date">July 2023</span>
-                        <span class="event">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="pdf/poster.pdf" target="_blank">Poster presentation</a> at
-                            <a href="https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4114" target="_blank">
-                                OHBM 2023
-                            </a>, Montreal, Canada.
-                        </span>
-                    </li>
-
-                    <li style="margin-bottom: 15px;">
-                        <span class="date">May 2023</span>
-                        <span class="event">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received a one-year Postdoctoral Researcher Funding from
-                            <a href="https://www.ellageorg.fi/wp-content/uploads/Myonnetyt-apurahat-2023.pdf"
-                                target="_blank">
-                                Ella and Georg Ehrnrooth Foundation, Finland
-                            </a>
-                            for the period 2023–2024.
-                        </span>
-                    </li>
-
-                    <li>
-                        <span class="date">Sept. 2022</span>
-                        <span class="event">
-                            &nbsp;&nbsp;&nbsp;&nbsp;Started postdoctoral research work in
-                            <a href="https://www.jyu.fi/en/research-groups/learning-and-neural-plasticity-from-single-neurons-to-behavior#toc--research-group-"
-                                target="_blank">
-                                Miriam Nokia's
-                            </a>
-                            group.
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <br><br><br><br>
-            <p style="color: #767575; font-family: ui-monospace;">
-                © Praghajieeth Raajhen Santhana Gopalan, 2026. Hosted by GitHub Pages. Last updated on April 2026.
-            </p>
-        </footer>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+<footer>
+<p><strong>Contact</strong></p>
+<p>Email: prrasant@jyu.fi</p>
+<p style="margin-top:8px; font-size:.92rem; color:#cbd5e1;">© 2026 Praghajieeth Raajhen Santhana Gopalan</p>
+<p data-en style="margin-top:6px; font-size:.85rem; color:#94a3b8;">Last updated: April 2026</p>
+<p data-fi style="margin-top:6px; font-size:.85rem; color:#94a3b8;">Päivitetty viimeksi huhtikuussa 2026</p>
+</footer>
 </body>
-
 </html>
